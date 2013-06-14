@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.beginningee6.book</groupId>
+	<artifactId>beginningee6-chapter10-ear-lib</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>beginningee6-chapter10-ear-lib</name>
+	<url>http://maven.apache.org</url>
+
+	<organization>
+		<name>Primagest, Inc.</name>
+		<url>http://www.primagest.co.jp/</url>
+	</organization>
+
+	<scm>
+		<connection>
+			scm:svn:http://192.168.41.37/svn/beginningee6-chapter10/trunk/beginningee6-chapter10-ear-lib
+		</connection>
+		<developerConnection>
+			scm:svn:http://192.168.41.37/svn/beginningee6-chapter10/trunk/beginningee6-chapter10-ear-lib
+		</developerConnection>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>ipm.artifactory.server</id>
+			<name>Commons apps release repository</name>
+			<url>http://192.168.41.37/artifactory/common-apps-release/</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<uniqueVersion>true</uniqueVersion>
+			<id>ipm.artifactory.server</id>
+			<name>Commons apps snapshot repository</name>
+			<url>http://192.168.41.37/artifactory/common-apps-snapshot/</url>
+			<layout>default</layout>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.beginningee6.book</groupId>
+			<artifactId>beginningee6-chapter10-jpa</artifactId>
+			<version>0.0.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.beginningee6.book</groupId>
+			<artifactId>beginningee6-chapter10-ejb</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+	</dependencies>
+
+</project>
